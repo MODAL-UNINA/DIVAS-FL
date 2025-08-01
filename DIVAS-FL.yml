@@ -26,3 +26,5 @@ dependencies:
       - jiwer==4.0.0
       - openai-whisper==20250625
       - tensorboard
+      - speechbrain==1.0.3
+      - pystoi==0.4.1
