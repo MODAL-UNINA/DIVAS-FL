@@ -192,7 +192,6 @@ def generate_audio_target(path, gender, mel_fn, w2v, net_v, model, gender_name, 
 def generate(config, hps, args): 
     os.makedirs(config.output_dir, exist_ok=True) 
     number = args.number
-    pretrain = True if args.target == 'pretrained_server' else False
     mel_fn = MelSpectrogramFixed(
         sample_rate=hps.data.sampling_rate,
         n_fft=hps.data.filter_length,
@@ -215,10 +214,7 @@ def generate(config, hps, args):
                 hps.diffusion.beta_max, 
                 hps).cuda()
 
-    if pretrain:
-        model.load_state_dict(torch.load(config.ckpt_model)['model']) #clients and server pre fine-tuning
-    else:
-        model.load_state_dict(torch.load(config.ckpt_model)) # server post fine-tuning
+    model.load_state_dict(torch.load(config.ckpt_model)) # server post fine-tuning
 
     model.eval()
     
