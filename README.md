@@ -6,14 +6,14 @@ Voice-based technologies deployed on consumer devices operate under strict priva
 ![Framework](images/DIVAS_framework.png)
 **Figure**. DIVAS Framework for voice editing based on Style-VAE.
 
-## Requirements
+## 🧰 Requirements
 To set up the environment for global model evaluation, create a python environment using the provided DIVAS-FL.yml file:
 ```bash
 conda env create -f DIVAS-FL.yml
 conda activate DIVAS-FL_env
 ```
 
-## Data Organization
+## 📂 Data Organization
 ### Dataset
 Data in the folder '$your_folder/data' are provided as an example. Prepare your own dataset following this format. In order to obtain files related to the pitch (f0 and f0_norm), use the YAAPT algorithm.
 ```bash
@@ -76,7 +76,21 @@ run_text
 ```
 The user can generate these filelists by using '$your_folder/create_list.py'
 
-## Training (centralized)
+## 📦 Pre-Trained Models
+Our model checkpoints can be downloaded [here](https://drive.google.com/drive/folders/1FWP8k3Rofar_TvYjsos1PcmcjM4q5ztM?usp=sharing).
+
+- pretrained_server.pth
+- server.pth
+- voc_hifigan.pth
+- voc_bigvgan.pth
+
+### 📁 Where to Place the Files
+
+- Save the **vocoder** models (`voc_hifigan.pth`, `voc_bigvgan.pth`) in the `vocoder/` directory.
+- Save the **main model checkpoints** (`pretrained_server.pth`, `server.pth`) in the `models/` directory.
+
+
+## 🛠️ Training (centralized)
 To train the model in a centralized setting, use the script below.
 All hyperparameters and training settings are defined in the corresponding config file.
 The following is an example command:
@@ -85,7 +99,7 @@ The following is an example command:
 python run_centralized.py --config configs/config_centralized.json --vocoder hifigan
 ```
 
-## Federated Learning- Fine-Tuning
+## 🧩 Federated Learning- Fine-Tuning
 To fine-tune the model in a federated learning setup, start by running the server process.
 You can choose your own hyperparameters (e.g., number of rounds, number of clients).
 An example command is shown below:
@@ -101,7 +115,7 @@ Also in this case, you can configure hyperparameters.
 CUDA_VISIBLE_DEVICES=1 python run_client.py --client_id client_1 --data_path ./run_txt --epochs 10
 ```
 
-## Inference
+## 🧠 Inference
 To run inference, use the '$your_folder/inference.py' script.
 
 ### Key argument
@@ -113,7 +127,7 @@ An example command is provided below:
 python inference.py --config configs/config_server.json --vocoder hifigan --target server --flag
 ```
 
-## Data Availability
+## 📥 Data Availability
 
 This work makes use of the following publicly available audio datasets (last accessed July 2025):
 
@@ -124,5 +138,5 @@ These datasets contain speech from thousands of speakers extracted from YouTube 
 
 Please refer to the [official VoxCeleb website](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/) for license and usage details.
 
-## Acknowledgments
+## 💎 Acknowledgments
 This work was partially supported by PNRR Centro Nazionale HPC, Big Data e Quantum Computing, (CN 00000013) (CUP: E63C22000980007).
