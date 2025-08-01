@@ -1,4 +1,4 @@
-# %% CUDA_VISIBLE_DEVICES=0 python run_client.py --client_id client_1 --data_path ./run_txt
+# %%
 import os
 import argparse
 from client import DIVASClient
