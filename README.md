@@ -86,8 +86,8 @@ Our model checkpoints can be downloaded [here](https://drive.google.com/drive/fo
 
 ### 📁 Where to Place the Files
 
-- Save the **vocoder** models (`voc_hifigan.pth`, `voc_bigvgan.pth`) in the `vocoder/` directory.
-- Save the **main model checkpoints** (`pretrained_server.pth`, `server.pth`) in the `models/` directory.
+- Save the **vocoder** models (`voc_hifigan.pth`, `voc_bigvgan.pth`) in the `$your_folder/vocoder/` directory.
+- Save the **main model checkpoints** (`pretrained_server.pth`, `server.pth`) in the `$your_folder/models/` directory.
 
 
 ## 🛠️ Training (centralized)
