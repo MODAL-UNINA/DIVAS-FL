@@ -1,4 +1,4 @@
-# %% # to run python main.py --config config.json --vocoder hifigan
+# %% 
 import os
 import torch
 from torch.nn import functional as F
