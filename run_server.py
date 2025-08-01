@@ -1,4 +1,4 @@
-# %% python run_server.py --num_rounds 10 --min_available_clients 5 --min_fit_clients 5 --data_path ./run_txt/server --device cuda:0
+# %%
 import os
 import argparse
 import types
