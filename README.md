@@ -106,7 +106,7 @@ To run inference, use the '$your_folder/inference.py' script.
 
 ### Key argument
 * target: defines which model to use for inference, either 'pretrained_server' or 'server'
-* flag: enables the generation. If omitted, evaluate the generated data.
+* flag: enables the generation. If omitted, evaluates the generated data.
 
 An example command is provided below:
 ```bash
