@@ -31,7 +31,7 @@ warnings.filterwarnings("ignore")
 # -----------------------------
 # PARSER ARGUMENTS
 # -----------------------------
-parser = argparse.ArgumentParser(description="Start Flower server for federated speaker recognition.")
+parser = argparse.ArgumentParser(description="Start Flower server.")
 parser.add_argument('--num_rounds', type=int, default=10, help='Number of federated learning rounds')
 parser.add_argument('--min_available_clients', type=int, default=5, help='Minimum number of clients available')
 parser.add_argument('--min_fit_clients', type=int, default=5, help='Minimum number of clients to train each round')
