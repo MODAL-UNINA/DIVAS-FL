@@ -14,7 +14,7 @@ logging.getLogger("urllib3").setLevel(logging.WARNING)
 warnings.filterwarnings("ignore")
 
 # %%
-parser = argparse.ArgumentParser(description="Federated Speaker Recognition")
+parser = argparse.ArgumentParser(description="Federated Client")
 parser.add_argument('--batch_size', type=int, default=32,
                     help='Batch size for training')
 parser.add_argument('--epochs', type=int, default=10,
