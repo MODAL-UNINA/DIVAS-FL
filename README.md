@@ -105,7 +105,7 @@ You can choose your own hyperparameters (e.g., number of rounds, number of clien
 An example command is shown below:
 
 ```bash
-python run_server.py --num_rounds 10 --min_available_clients 5 --min_fit_clients 5 --data_path ./run_txt/server --device cuda:0
+python run_server.py --num_rounds 10 --min_available_clients 20 --min_fit_clients 20 --data_path ./run_txt/server --device cuda:0
 ```
 
 Then, start one or more clients, each with its own client ID.
