@@ -133,6 +133,7 @@ This work makes use of the following publicly available audio datasets (last acc
 
 - [**VoxCeleb1**](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox1.html)
 - [**VoxCeleb2**](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox2.html)
+- [**Common Voice**](https://commonvoice.mozilla.org/en/datasets) 
 
 These datasets contain speech from thousands of speakers extracted from YouTube videos.
 
