@@ -133,11 +133,11 @@ This work makes use of the following publicly available audio datasets (last acc
 
 - [**VoxCeleb1**](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox1.html)
 - [**VoxCeleb2**](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox2.html)
-- [**Common Voice**](https://commonvoice.mozilla.org/en/datasets) 
+- [**Common Voice**](https://commonvoice.mozilla.org/en)
 
 These datasets contain speech from thousands of speakers extracted from YouTube videos.
 
-Please refer to the [official VoxCeleb website](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/) for license and usage details.
+Please refer to the [official VoxCeleb website](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/) and [official Mozilla website](https://www.mozilla.org/en-US/foundation/licensing/website-content) for license and usage details.
 
 ## 💎 Acknowledgments
-This work was partially supported by PNRR Centro Nazionale HPC, Big Data e Quantum Computing, (CN 00000013) (CUP: E63C22000980007).
+his work was supported by the MSCA Doctoral Networks project T.U.A.I. - Towards an Understanding of Artificial Intelligence via a transparent, open and explainable perspective (TUAI) project, N°101168344.
